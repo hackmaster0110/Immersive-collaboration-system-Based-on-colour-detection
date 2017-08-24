@@ -57,8 +57,8 @@ while True:
     #resize the frame, blur it, and convert it to the HSV
 
     img = imutils.resize(img, width=600)
-
-    frame = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+    frame=img
+    #frame = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
     # color spacer in the mask
